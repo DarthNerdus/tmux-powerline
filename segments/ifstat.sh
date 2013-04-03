@@ -27,7 +27,7 @@ run_segment() {
 				;;
 		esac
 		if [ -n "${type}" ]; then
-			formate=$(echo "${formate} ${type} ⇊ %.2f ⇈ %.2f")
+			formate=$(echo "${formate} ${type} ⇊ %.0fK/s ⇈ %.0fK/s")
 			holder=$(echo "${holder},\$$((index)),\$$((index+1))")
 		fi
 		index=$((index+2))
